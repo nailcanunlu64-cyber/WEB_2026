@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akıllı Telefon Dünyası</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef3f8;
+    color: #26364a;
+    font-size: 13px;
+}
+
+header {
+    background: #164b91;
+    color: white;
+    padding: 14px 18px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+header h1 {
+    font-size: 26px;
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    background: #2165c5;
+    margin: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #123f82;
+}
+
+main {
+    background: white;
+    margin: 10px 5px;
+    padding: 15px;
+    border-radius: 4px;
+    min-height: 280px;
+    scroll-margin-top: 10px;
+}
+
+h2 {
+    color: #164b91;
+    font-size: 18px;
+}
+
+.telefon {
+    background: #f0f6fc;
+    border-left: 4px solid #2165c5;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border-radius: 3px;
+}
+
+.telefon h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.telefon p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.ana-kutu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: #f0f6fc;
+    padding: 15px;
+}
+
+.ana-kutu img {
+    width: 220px;
+    max-width: 40%;
+    height: auto;
+    border-radius: 4px;
+}
+
+form {
+    max-width: 650px;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #cbd5e1;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #2165c5;
+}
+
+form label:has(input[type="radio"]),
+form label:has(input[type="checkbox"]) {
+    display: block;
+    font-weight: normal;
+}
+
+button {
+    background: #2165c5;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    margin-top: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #164b91;
+}
+
+footer {
+    background: #123f82;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        padding: 11px 8px;
+        font-size: 12px;
+    }
+
+    .ana-kutu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ana-kutu img {
+        max-width: 100%;
+        width: 220px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Akıllı Telefon Dünyası 📱</h1>
+    <p>HTML5 Web Projesi</p>
+</header>
+
+<nav>
+    <a href="#anasayfa">Ana Sayfa</a>
+    <a href="#modeller">Telefon Modelleri</a>
+    <a href="#iletisim">İletişim</a>
+</nav>
+
+<main id="anasayfa">
+    <h2>Akıllı Telefon Projesi</h2>
+
+    <div class="ana-kutu">
+        <div>
+            <h2>Proje Hakkında</h2>
+            <p>
+                Bu proje, HTML5 kullanılarak geliştirilmiş
+                basit bir web sitesi örneğidir.
+            </p>
+
+            <h2>Hedeflerimiz</h2>
+            <ul>
+                <li>Telefon markalarını tanımak</li>
+                <li>Telefon özelliklerini öğrenmek</li>
+                <li>Web tasarımı konusunda deneyim kazanmak</li>
+            </ul>
+        </div>
+
+        <img
+            src="https://placehold.co/400x300/e0ebf8/164b91?text=Akilli+Telefon"
+            alt="Akıllı telefon görseli">
+    </div>
+</main>
+
+<main id="modeller">
+    <h2>Telefon Modelleri</h2>
+    <p>Popüler telefon markalarını tanıyalım.</p>
+
+    <div class="telefon">
+        <h2>1. Samsung</h2>
+        <p>Android işletim sistemini kullanan popüler telefon markalarından biridir.</p>
+    </div>
+
+    <div class="telefon">
+        <h2>2. Apple iPhone</h2>
+        <p>Apple tarafından üretilir. iOS işletim sistemini kullanır.</p>
+    </div>
+
+    <div class="telefon">
+        <h2>3. Xiaomi</h2>
+        <p>Farklı fiyat seçenekleri ve modelleri bulunan bir telefon markasıdır.</p>
+    </div>
+
+    <div class="telefon">
+        <h2>4. Huawei</h2>
+        <p>Kamera ve mobil teknoloji alanında ürünler geliştiren bir markadır.</p>
+    </div>
+</main>
+
+<main id="iletisim">
+    <h2>İletişim Formu</h2>
+    <p>Telefonlar hakkındaki düşüncelerini paylaş!</p>
+
+    <form id="iletisimFormu">
+        <label for="ad">Ad Soyad:</label>
+        <input type="text" id="ad" required>
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" required>
+
+        <label for="marka">En sevdiğin telefon markası:</label>
+        <select id="marka">
+            <option>Samsung</option>
+            <option>Apple</option>
+            <option>Xiaomi</option>
+            <option>Huawei</option>
+            <option>Diğer</option>
+        </select>
+
+        <label for="mesaj">Mesajın:</label>
+        <textarea id="mesaj" rows="5" required></textarea>
+
+        <p>Telefonları araştırmayı sever misin?</p>
+
+        <label>
+            <input type="radio" name="secim" value="Evet" required>
+            Evet
+        </label>
+
+        <label>
+            <input type="radio" name="secim" value="Hayır">
+            Hayır
+        </label>
+
+        <label>
+            <input type="checkbox" required>
+            Form bilgilerimi paylaşmayı kabul ediyorum.
+        </label>
+
+        <button type="submit">Gönder</button>
+    </form>
+</main>
+
+<footer>
+    Akıllı Telefon Dünyası - 2026
+</footer>
+
+<script>
+
+</script>
+
+</body>
+</html>
